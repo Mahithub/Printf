@@ -62,19 +62,19 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
-			b = handle_specifiers(&args, &format);
+			b = handle_specifiers(&format, &args);
 			if (b == -1)
 				return (b);
-			add += b;
 			format++;
+			add += b;
 		}
 		else
 		{
 			b = write(1, format, 1);
 			if (b == -1)
 				return (b);
-			add++;
 			format++;
+			add++;
 		}
 	}
 	va_end(args);
