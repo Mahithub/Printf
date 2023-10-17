@@ -13,7 +13,6 @@ void reverse_string(char *s)
 	int begin;
 	int terminate;
 	char temp;
-	int num;
 
 	terminate = strlen(s) - 1;
 	for (begin = 0; begin < terminate; begin++, terminate--)
