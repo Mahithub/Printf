@@ -14,7 +14,7 @@ int handle_specifiers(const char **format, va_list *args)
 	switch (*(++(*format)))
 	{
 		case '%':
-			c = print(1, "%", 1);
+			c = printf(1, "%", 1);
 			break;
 case 'c':
 			c = print_char(args);
@@ -50,7 +50,7 @@ case 'c':
 int _printf(const char *format, ...)
 {
 	int b;
-Int add = 0;
+	int add = 0;
 	va_list args;
 
 	if (!format)
