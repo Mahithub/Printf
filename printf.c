@@ -49,7 +49,7 @@ case 'c':
 
 int _printf(const char *format, ...)
 {
-	int b; 
+	int b;
 Int add = 0;
 	va_list args;
 
