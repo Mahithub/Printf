@@ -9,8 +9,8 @@
 
 int print_char(va_list *args)
 {
-	char k;
+	char c;
 
-	k = va_arg(*args, int);
+	c = va_arg(*args, int);
 	return (1);
 }

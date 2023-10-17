@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * print_int - print an integer value and returns -1
  * @args: pick a digit from variadic list
