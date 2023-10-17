@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * reverse_string - reverses the given string
  * @s: the string value that get reversed
@@ -10,8 +10,10 @@
 
 void reverse_string(char *s)
 {
-	int begin, terminate;
+	int begin;
+	int terminate;
 	char temp;
+	int num;
 
 	terminate = strlen(s) - 1;
 	for (begin = 0; begin < terminate; begin++, terminate--)
@@ -28,7 +30,7 @@ char *int_to_string(int num)
 	int i = 0;
 
 	s = malloc(12);
-	if (number < 0)
+	if (num < 0)
 		n = -n;
 
 	while (n != 0)
@@ -38,13 +40,13 @@ char *int_to_string(int num)
 	}
 	if (!s)
 		return (NULL);
-	if (number == 0)
+	if (num == 0)
 	{
 		*s = '0';
 		*(s + 1) = '\0';
 		return (s);
 	}
-		if (number < 0)
+		if (num < 0)
 		s[i++] = '-';
 	s[i] = '\0';
 	reverse_string(s);
